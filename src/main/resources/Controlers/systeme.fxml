@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600" prefWidth="900" style="-fx-background-color: #663300;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlers.sysControler">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="900.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/pexels-stanislav-kondratiev-2908984.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="#ff5353" layoutX="338.0" layoutY="54.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Menu Principal" textAlignment="CENTER">
+         <font>
+            <Font name="Dubai Bold" size="35.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="109.0" fitWidth="149.0" layoutX="284.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/customer.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="109.0" fitWidth="127.0" layoutX="284.0" layoutY="252.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/dvd-player.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="109.0" fitWidth="135.0" layoutX="725.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/books.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="109.0" fitWidth="135.0" layoutX="725.0" layoutY="402.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/referee.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="109.0" fitWidth="135.0" layoutX="725.0" layoutY="252.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/cd-player.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="116.0" fitWidth="118.0" layoutX="280.0" layoutY="398.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/borrow.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="GestionDdherent" buttonType="RAISED" layoutX="43.0" layoutY="100.0" onAction="#onclickgestadherent" prefHeight="110.0" prefWidth="166.0" ripplerFill="RED" style="-fx-background-color: #ff7f7f;" text="Gestion des &#10;adherent" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="GestionDVD" buttonType="RAISED" layoutX="43.0" layoutY="252.0" onAction="#onclickgestdvd" prefHeight="110.0" prefWidth="166.0" ripplerFill="RED" style="-fx-background-color: #ff7f7f;" text="Gestion des &#10;DVD" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="GestionEmprunt" buttonType="RAISED" layoutX="43.0" layoutY="403.0" onAction="#onclickgestEmpruntRendre" prefHeight="110.0" prefWidth="166.0" ripplerFill="RED" style="-fx-background-color: #ff7f7f;" text="Gestion des&#10;Emprunt et &#10;Rendre" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="GestionDocument" buttonType="RAISED" layoutX="487.0" layoutY="100.0" onAction="#onclickgestlivre" prefHeight="110.0" prefWidth="166.0" ripplerFill="RED" style="-fx-background-color: #ff7f7f;" text="Gestion des&#10;Livre" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="GestionCD" buttonType="RAISED" layoutX="487.0" layoutY="252.0" onAction="#onclickgestcd" prefHeight="110.0" prefWidth="166.0" ripplerFill="RED" style="-fx-background-color: #ff7f7f;" text="Gestion des&#10;CD" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="GestionSanction" buttonType="RAISED" layoutX="487.0" layoutY="402.0" onAction="#onclickgestSanction" prefHeight="110.0" prefWidth="166.0" ripplerFill="RED" style="-fx-background-color: #ff7f7f;" text=" Gestion des &#10;sanctions" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="retour" layoutX="707.0" layoutY="547.0" onAction="#onretour" prefHeight="33.0" prefWidth="72.0" ripplerFill="BLACK" style="-fx-background-color: #ff3300;" text="Logout" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="closesys" layoutX="797.0" layoutY="547.0" onAction="#onclosesys" prefHeight="33.0" prefWidth="72.0" ripplerFill="#2700ff" style="-fx-background-color: #0099ff;" text="Exit" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

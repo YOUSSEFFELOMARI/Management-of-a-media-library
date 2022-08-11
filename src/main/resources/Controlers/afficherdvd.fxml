@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600" prefWidth="900" style="-fx-background-color: #663300;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlers.Afficherdvd">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="900.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/pexels-stanislav-kondratiev-2908984.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tabledvd" layoutX="24.0" layoutY="79.0" opacity="0.9" prefHeight="456.0" prefWidth="852.0" style="-fx-background-color: #ffe6cc;">
+         <columns>
+            <TableColumn fx:id="numDvdt" prefWidth="70.3999605178833" text="numDvd" />
+            <TableColumn fx:id="nomFilmt" prefWidth="95.199951171875" text="nomFilm" />
+            <TableColumn fx:id="nomDocumentairet" prefWidth="129.6000518798828" text="nomDocumentaire" />
+            <TableColumn fx:id="nomRealisateurt" prefWidth="115.199951171875" text="nomRealisateur" />
+            <TableColumn fx:id="nomActeurt" prefWidth="96.79998779296875" text="nomActeur" />
+            <TableColumn fx:id="nomEditeurdvdt" prefWidth="100.79998779296875" text="nomEditeurdvd" />
+            <TableColumn fx:id="nomProducteurt" prefWidth="125.5999755859375" text="nomProducteur" />
+         </columns>
+      </TableView>
+      <Text fill="#ff5a5a" layoutX="24.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Les DVD">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Text>
+      <JFXButton fx:id="retour" layoutX="786.0" layoutY="550.0" onAction="#onretour" prefHeight="31.0" prefWidth="90.0" ripplerFill="#2700ff" style="-fx-background-color: #0099ff;" text="Retour" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600" prefWidth="900" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlers.Gestemprt">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="900.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/pexels-stanislav-kondratiev-2908984.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="numLivEmp" layoutX="540.0" layoutY="94.0" promptText="Num Livre" style="-fx-background-color: #ffe6cc;" />
+      <TextField fx:id="numDvdEmp" layoutX="540.0" layoutY="128.0" promptText="Num DVD" style="-fx-background-color: #ffe6cc;" />
+      <TextField fx:id="numCdEmp" layoutX="540.0" layoutY="165.0" promptText="Num CD" style="-fx-background-color: #ffe6cc;" />
+      <TextField fx:id="numAdhEmp" layoutX="323.0" layoutY="128.0" promptText="Num Adh" style="-fx-background-color: #ffe6cc;" />
+      <TextField fx:id="numLivRen" layoutX="540.0" layoutY="235.0" promptText="Num Livre" style="-fx-background-color: #ffe6cc;" />
+      <TextField fx:id="numDvdRen" layoutX="540.0" layoutY="269.0" promptText="Num DVD" style="-fx-background-color: #ffe6cc;" />
+      <TextField fx:id="numCdRen" layoutX="540.0" layoutY="306.0" promptText="Num CD" style="-fx-background-color: #ffe6cc;" />
+      <TextField fx:id="numAdhRen" layoutX="323.0" layoutY="269.0" promptText="Num Adh" style="-fx-background-color: #ffe6cc;" />
+      <Text fill="WHITE" layoutX="213.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Num Adherent">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="213.0" layoutY="286.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Num Adherent">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <Line endX="576.7999877929688" endY="62.0" layoutX="-113.0" layoutY="319.0" startX="576.7999877929688" startY="196.0" stroke="WHITE" />
+      <Text fill="#ff5a5a" layoutX="30.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gestion Des Emprunte">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Text>
+      <Line endX="863.0" endY="124.0928955078125" layoutX="7.0" layoutY="-58.0" startX="16.000011444091797" startY="124.09288024902344" stroke="WHITE" />
+      <Text fill="#ff7f7f" layoutX="38.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Emprunter: ">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#ff7f7f" layoutX="38.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rendre: ">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Text>
+      <Line endX="863.0" endY="124.0928955078125" layoutX="7.0" layoutY="84.0" startX="16.000011444091797" startY="124.09288024902344" stroke="WHITE" />
+      <Line endX="863.0" endY="124.0928955078125" layoutX="7.0" layoutY="229.0" startX="16.000011444091797" startY="124.09288024902344" stroke="WHITE" />
+      <JFXButton fx:id="retour" layoutX="793.0" layoutY="553.0" onAction="#OnClickRetour" prefHeight="33.0" prefWidth="78.0" ripplerFill="#2700ff" style="-fx-background-color: #0099ff;" text="Retour" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="167.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/user-6-64.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="167.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/user-6-64.png" />
+         </image>
+      </ImageView>
+      <Text fill="#ff7f7f" layoutX="38.0" layoutY="382.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Les Emprunteurs: ">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Text>
+      <JFXButton layoutX="742.0" layoutY="92.0" onAction="#OnClickEmprunterLivre" prefHeight="27.0" prefWidth="127.0" ripplerFill="RED" style="-fx-background-color: #ff7f7f;" text="Emprunter Livre" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="742.0" layoutY="126.0" onAction="#OnClickEmprunterDvd" prefHeight="27.0" prefWidth="127.0" ripplerFill="RED" style="-fx-background-color: #ff7f7f;" text="Emprunter DVD" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="742.0" layoutY="163.0" onAction="#OnClickEmprunterCd" prefHeight="27.0" prefWidth="127.0" ripplerFill="RED" style="-fx-background-color: #ff7f7f;" text="Emprunter CD" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="742.0" layoutY="234.0" onAction="#OnClickRendreLivre" prefHeight="27.0" prefWidth="127.0" ripplerFill="RED" style="-fx-background-color: #ff7f7f;" text="Rendre Livre" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="742.0" layoutY="269.0" onAction="#OnClickRendreDvd" prefHeight="27.0" prefWidth="127.0" ripplerFill="RED" style="-fx-background-color: #ff7f7f;" text="Rendre DVD" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="742.0" layoutY="305.0" onAction="#OnClickRendreCd" prefHeight="27.0" prefWidth="127.0" ripplerFill="RED" style="-fx-background-color: #ff7f7f;" text="Rendre CD" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="241.0" layoutY="399.0" onAction="#OnClickAfficherEmprunteursDeLivres" prefHeight="27.0" prefWidth="209.0" ripplerFill="RED" style="-fx-background-color: #ff7f7f;" text="Afficher emprunteurs des livres" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="241.0" layoutY="440.0" onAction="#OnClickAfficherEmprunteursDeDvd" prefHeight="27.0" prefWidth="209.0" ripplerFill="RED" style="-fx-background-color: #ff7f7f;" text="Afficher emprunteurs des DVD" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="241.0" layoutY="481.0" onAction="#OnClickAfficherEmprunteursDeCd" prefHeight="27.0" prefWidth="209.0" ripplerFill="RED" style="-fx-background-color: #ff7f7f;" text="Afficher emprunteurs des CD" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="694.0" layoutY="399.0" onAction="#OnClickAfficherLivreEmprinté" prefHeight="27.0" prefWidth="177.0" ripplerFill="RED" style="-fx-background-color: #ff7f7f;" text="Afficher livre emprunté" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="694.0" layoutY="481.0" onAction="#OnClickAfficherCdEmprinte" prefHeight="27.0" prefWidth="177.0" ripplerFill="RED" style="-fx-background-color: #ff7f7f;" text="Afficher CD emprunté" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="694.0" layoutY="440.0" onAction="#OnClickAfficherDvdEmprinté" prefHeight="27.0" prefWidth="177.0" ripplerFill="RED" style="-fx-background-color: #ff7f7f;" text="Afficher DVD emprunté" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="485.0" layoutY="441.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/dvd-48.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="485.0" layoutY="400.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/literature-48.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="485.0" layoutY="482.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/cd-48.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="38.0" layoutY="441.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/dvd-48.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="38.0" layoutY="400.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/literature-48.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="38.0" layoutY="482.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/cd-48.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="83.0" layoutY="415.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Emprunteurs des Livres" wrappingWidth="141.8408203125">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="83.0" layoutY="497.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Emprunteurs des CD" wrappingWidth="141.8408203125">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="83.0" layoutY="456.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Emprunteurs des DVD" wrappingWidth="141.8408203125">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="540.0" layoutY="419.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Livres emprunté" wrappingWidth="98.47265625">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="540.0" layoutY="498.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CD emprunté" wrappingWidth="98.47265625">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="540.0" layoutY="457.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DVD emprunté" wrappingWidth="98.47265625">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Text>
+      <Line endX="863.0" endY="124.0928955078125" layoutX="7.0" layoutY="412.0" startX="16.000011444091797" startY="124.09288024902344" stroke="WHITE" />
+   </children>
+</AnchorPane>

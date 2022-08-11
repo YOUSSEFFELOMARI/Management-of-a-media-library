@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="448.0" prefWidth="660.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlers.login">
+   <children>
+      <ImageView fitHeight="448.0" fitWidth="673.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/pexels-stanislav-kondratiev-2908984.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="name" layoutX="386.0" layoutY="131.0" prefHeight="38.0" prefWidth="195.0" promptText="Username" style="-fx-background-color: #ffe6cc;" />
+      <PasswordField fx:id="password" layoutX="386.0" layoutY="196.0" onAction="#onexitButtonclick" prefHeight="38.0" prefWidth="195.0" promptText="Password" style="-fx-background-color: #ffe6cc;" />
+      <JFXButton fx:id="loginbt" buttonType="RAISED" layoutX="416.0" layoutY="283.0" onAction="#onloginButtonClick" prefHeight="38.0" prefWidth="135.0" ripplerFill="#595959" style="-fx-background-color: #BF5614;" text="Login" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="exit" buttonType="RAISED" layoutX="431.0" layoutY="362.0" onAction="#onexitButtonclick" prefHeight="38.0" prefWidth="105.0" ripplerFill="#631a1a" style="-fx-background-color: #c43921;" text="Exit" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </JFXButton>
+      <Text fill="#ff5a5a" layoutX="329.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gestion Bibliotheque" textAlignment="CENTER" wrappingWidth="308.6666564941404">
+         <font>
+            <Font name="Dubai Bold" size="30.0" />
+         </font>
+      </Text>
+      <Text fx:id="textpswd" fill="WHITE" layoutX="420.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="126.13671875">
+         <font>
+            <Font size="13.0" />
+         </font></Text>
+      <ImageView fitHeight="448.0" fitWidth="301.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/library.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
